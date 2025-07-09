@@ -135,7 +135,7 @@
         }
 
         .about-image {
-            width: 300px;
+            width: 200px;
             height: 400px;
             background: #333;
             border-radius: 10px;
@@ -155,7 +155,7 @@
         .about-content h2::after {
             content: '';
             display: block;
-            width: 50px;
+            width: 150px;
             height: 3px;
             background: #ffcc00;
             margin-top: 1rem;
@@ -184,7 +184,7 @@
         .resume-section h2::after {
             content: '';
             display: block;
-            width: 50px;
+            width: 150px;
             height: 3px;
             background: #ffcc00;
             margin: 1rem auto 0;
@@ -197,8 +197,8 @@
 
         .timeline-item {
             background: #f8f8f8;
-            padding: 2rem;
-            margin: 2rem 0;
+            padding: 1rem;
+            margin: 1rem 0;
             border-left: 4px solid #ffcc00;
             position: relative;
         }
@@ -223,13 +223,19 @@
         .timeline-date {
             color: #888;
             font-size: 0.9rem;
-            margin-bottom: 1rem;
+            
         }
 
         .timeline-item p {
             color: #666;
             line-height: 1.6;
         }
+        .highlight-yellow {
+            color: #ffcc00; 
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
 
         /* 作品部分 */
         .works-section {
@@ -422,13 +428,13 @@
 <body>
     <!-- 左侧导航栏 -->
     <nav class="navbar">
-        <div class="logo">YUMO.</div>
+        <div class="logo">YUMO</div>
         <ul class="nav-menu">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">关于我</a></li>
             <li><a href="#resume">我的简历</a></li>
             <li><a href="#works">我的作品</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#contact">联系我</a></li>
         </ul>
     </nav>
 
@@ -438,13 +444,14 @@
         <section id="home" class="hero-section">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    MY NAME IS
+                    HI, THIS IS 
                     <span class="hero-name">YUMO</span>
                 </h1>
                 <div class="hero-role">I'M A DATA ANALYST</div>
             </div>
             <div class="hero-image">
-                👨‍💻
+                <img src="pic/headpic.jpg" alt="Yumo's Avatar" />
+
             </div>
         </section>
 
@@ -453,10 +460,10 @@
             <div class="section-content">
                 <div class="about-container">
                     <div class="about-image">
-                        🧑‍💻
+                        
                     </div>
                     <div class="about-content">
-                        <h2>who am i<br>HELLO</h2>
+                        <h2>关于我<br></h2>
                         <div class="about-text">
                             <p>我是一名数据分析师，专注于利用AI技术和数据洞察为企业提供智能化解决方案。在金融科技、零售电商、商业地产等多个行业拥有丰富的实战经验，擅长通过数据分析和机器学习模型优化业务流程，提升运营效率。</p>
                             <br>
@@ -475,24 +482,44 @@
                     <div class="timeline-item">
                         <h3>开源证券-金融科技部 数字化分析实习生</h3>
                         <div class="timeline-date">2025.02. – 2025.05.</div>
-                        <p>利用AI技术优化研发项目管理流程与系统，提供数字化转型解决方案，推动项目管理流程标准化与SOP升级。<strong>AI赋能项目管理解决方案</strong>：调研企业内部研发项目管理现状，基于加计扣除税务政策，制定研发项目管理准则与操作指南，并利用Deepseek R1大模型训练智能体，自动化立项审查与评审材料优化，推动审计通过率提升。</p>
+                        <p><span class="highlight-yellow">利用AI技术优化研发项目管理流程与系统，提供数字化转型解决方案，推动项目管理流程标准化与SOP升级。</span></p>
+                        <ul>
+                            <li><strong>AI赋能项目管理解决方案</strong>：调研企业内部研发项目管理现状，基于加计扣除税务政策，制定研发项目管理准则与操作指南，并利用Deepseek R1大模型训练智能体，自动化立项审查与评审材料优化，推动审计通过率提升。</li>
+                        </ul>
                     </div>
+
                     <div class="timeline-item">
                         <h3>宜家中国-数字化中心 AI数据分析实习生</h3>
                         <div class="timeline-date">2024.06. – 2024.12.</div>
-                        <p>为远程销售团队提供数据分析与可视化报表支持，并探索AI驱动的智能化管理解决方案，提升团队效率与决策能力。<strong>在线用户智能化运营解决方案</strong>：利用大语言模型建立会话标签体系，训练模型进行智能打标，用户标签覆盖率提升26%。<strong>远程销售业务漏斗分析</strong>：搭建完善的流量漏斗分析模型，识别高潜力场域和低转化环节，推动季度GMV提升超过九百万。</p>
+                        <p><span class="highlight-yellow">为远程销售团队提供数据分析与可视化报表支持，并探索AI驱动的智能化管理解决方案，提升团队效率与决策能力。</span></p>
+                        <ul>
+                            <li><strong>在线用户智能化运营解决方案</strong>：利用大语言模型建立会话标签体系，训练模型进行智能打标，用户标签覆盖率提升26%。</li>
+                            <li><strong>远程销售业务漏斗分析</strong>：搭建完善的流量漏斗分析模型，识别高潜力场域和低转化环节，推动季度GMV提升超过九百万。</li>
+                        </ul>
                     </div>
+
                     <div class="timeline-item">
                         <h3>仲量联行-中国研究部 市场分析实习生</h3>
                         <div class="timeline-date">2023.07. – 2023.10.</div>
-                        <p>为商业地产客户提供市场洞察报告与租赁数据分析，支撑招商和战略决策优化。<strong>新零售产业研究</strong>：研究疫情后中国新零售产业市场发展动态，使用聚类算法比较线下转型的淘品牌和传统零售业发展路径差异，输出选店策略报告。<strong>上海商铺租赁市场追踪</strong>：合作开展上海88家商业综合体3.3w+零售铺面品类和租赁情况追踪，协助产出季度上海零售市场分析报告。</p>
+                        <p><span class="highlight-yellow">为商业地产客户提供市场洞察报告与租赁数据分析，支撑招商和战略决策优化。</span></p>
+                        <ul>
+                            <li><strong>新零售产业研究</strong>：研究疫情后中国新零售产业市场发展动态，使用聚类算法比较线下转型的淘品牌和传统零售业发展路径差异，输出选店策略报告。</li>
+                            <li><strong>上海商铺租赁市场追踪</strong>：合作开展上海88家商业综合体3.3w+零售铺面品类和租赁情况追踪，协助产出季度上海零售市场分析报告。</li>
+                        </ul>
                     </div>
+
                     <div class="timeline-item">
                         <h3>同济规划院-智能城市大数据库 数据分析实习生</h3>
                         <div class="timeline-date">2023.10. – 2024.06</div>
-                        <p>参与多个政府研究项目，为市、区级政府提供产业选址和土地利用策略，支持城市大数据库建设。<strong>产业链分析项目</strong>：获取上市公司财报数据，利用Llama2大模型和SpaCy库实现数据结构化，协助产业链关联分析、DBSCAN聚类分析，产出6篇研究报告。<strong>城市数据治理</strong>：合作完成年均6000w+全国poi数据获取与MySQL入库工作，数据调取效率提升80.46%。</p>
+                        <p><span class="highlight-yellow">参与多个政府研究项目，为市、区级政府提供产业选址和土地利用策略，支持城市大数据库建设。</span></p>
+                        <ul>
+                            <li><strong>产业链分析项目</strong>：获取上市公司财报数据，利用Llama2大模型和SpaCy库实现数据结构化，协助产业链关联分析、DBSCAN聚类分析，产出6篇研究报告。</li>
+                            <li><strong>城市数据治理</strong>：合作完成年均6000w+全国poi数据获取与MySQL入库工作，数据调取效率提升80.46%。</li>
+                        </ul>
                     </div>
                 </div>
+
+
             </div>
         </section>
 
